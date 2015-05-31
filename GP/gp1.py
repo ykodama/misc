@@ -1,6 +1,5 @@
 # coding: utf-8
 import numpy as np
-import math
 import matplotlib.pyplot as plt
 
 
@@ -12,7 +11,7 @@ theta3 = 0.0
 
 
 def covariance_func(xi, xj):
-	return theta0 * math.exp(-0.5 * theta1 * (xi - xj) * (xi - xj)) \
+	return theta0 * np.exp(-0.5 * theta1 * (xi - xj) * (xi - xj)) \
 			+ theta2 + theta3 * xi * xj
 
 
